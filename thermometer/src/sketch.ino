@@ -16,9 +16,9 @@ OneWire ourWire(ONE_WIRE_BUS);
 /* Tell Dallas Temperature Library to use oneWire Library */
 DallasTemperature sensors(&ourWire);
 
-void setup() { 
-  
-  Serial.begin(9600);      // open the serial port at 9600 bps:  
+void setup() {
+
+  Serial.begin(9600);      // open the serial port at 9600 bps:
   Serial.print("Hello\n");
   sensors.begin();
   pinMode(A5, OUTPUT);
